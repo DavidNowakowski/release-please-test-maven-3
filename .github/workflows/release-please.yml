@@ -1,0 +1,21 @@
+on:
+  push:
+    branches:
+      - develop
+
+permissions:
+  contents: write
+  pull-requests: write
+
+name: release-please
+
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: google-github-actions/release-please-action@v3
+        with:
+          changelog-notes-type: github
+          release-type: maven
+          #pull-request-title-pattern: "chore: release${component} ${version}"
+          #command: github-release
