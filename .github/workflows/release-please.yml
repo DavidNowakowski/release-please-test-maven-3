@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: google-github-actions/release-please-action@v3
         with:
-          changelog-notes-type: github
+          #changelog-notes-type: github
           release-type: maven
           #pull-request-title-pattern: "chore: release${component} ${version}"
           #command: github-release
