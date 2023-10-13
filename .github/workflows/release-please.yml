@@ -4,7 +4,7 @@ env:
 on:
   push:
     branches:
-      - $DEFAULT_BRANCH
+      - develop
 
 permissions:
   contents: write
@@ -13,7 +13,7 @@ permissions:
 name: release-please
 
 jobs:
-  release-please-develop:
+  release-please:
     runs-on: ubuntu-latest
     steps:
       - uses: google-github-actions/release-please-action@v3
