@@ -29,6 +29,8 @@ jobs:
           commit-message: update changelog
           title: Update Changelog
           body: Update changelog to reflect release changes
-          branch: $MASTER_BRANCH
-          base: release-please--branches--$DEFAULT_BRANCH
+          #branch: $MASTER_BRANCH
+          #base: release-please--branches--$DEFAULT_BRANCH
+          branch: master
+          base: release-please--branches--develop
             
