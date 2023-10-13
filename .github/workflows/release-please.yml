@@ -1,7 +1,10 @@
+env:
+  DEFAULT_BRANCH: develop
+  MASTER_BRANCH: master
 on:
   push:
     branches:
-      - develop
+      - $DEFAULT_BRANCH
 
 permissions:
   contents: write
@@ -10,7 +13,7 @@ permissions:
 name: release-please
 
 jobs:
-  release-please:
+  release-please-develop:
     runs-on: ubuntu-latest
     steps:
       - uses: google-github-actions/release-please-action@v3
@@ -19,3 +22,8 @@ jobs:
           release-type: maven
           #pull-request-title-pattern: "chore: release${component} ${version}"
           #command: github-release
+          
+      - name: create pull request
+        run: gh pr create -B release-please--branches--$DEFAULT_BRANCH -H ${MASTER_BRANCH} --title 'Merge branch_to_merge into base_branch' --body 'Created by Github action'
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
