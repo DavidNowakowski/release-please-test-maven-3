@@ -23,14 +23,17 @@ jobs:
           #pull-request-title-pattern: "chore: release${component} ${version}"
           #command: github-release
       - uses: actions/checkout@v2
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v5.0.2
-        with:
-          commit-message: update changelog
-          title: Update Changelog
-          body: Update changelog to reflect release changes
-          #branch: $MASTER_BRANCH
-          #base: release-please--branches--$DEFAULT_BRANCH
-          branch: master
-          base: release-please--branches--develop
-            
+      #- name: Create Pull Request
+      #  uses: peter-evans/create-pull-request@v5.0.2
+      #  with:
+      #    commit-message: update changelog
+      #    title: Update Changelog
+      #    body: Update changelog to reflect release changes
+      #    #branch: $MASTER_BRANCH
+      #    #base: release-please--branches--$DEFAULT_BRANCH
+      #    branch: master
+      #    base: release-please--branches--develop
+      - name: create pull request
+        run: gh pr create -B release-please--branches--develop -H master --title 'Merge branch_to_merge into base_branch' --body 'Created by Github action'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
