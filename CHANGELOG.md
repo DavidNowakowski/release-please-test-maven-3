@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.2.0](https://github.com/DavidNowakowski/release-please-test-maven-3/compare/v2.1.0...v2.2.0) (2023-10-13)
+
+
+### Features
+
+* Update README.md ([b085783](https://github.com/DavidNowakowski/release-please-test-maven-3/commit/b085783cb2440feed7e757230489e65ae3fe2faf))
+* Update release-please.yml ([53a3a8e](https://github.com/DavidNowakowski/release-please-test-maven-3/commit/53a3a8ebafd2bd298d75ce79587b90940c0f993f))
+* Update release-please.yml ([2795d8b](https://github.com/DavidNowakowski/release-please-test-maven-3/commit/2795d8bbf8e191472558711b00d19e3fc05a97cf))
+* Update release-please.yml ([0859846](https://github.com/DavidNowakowski/release-please-test-maven-3/commit/08598465aca1a08c9ddeb6acef8c7f27f8efcf27))
+
 ## [2.1.0](https://github.com/DavidNowakowski/release-please-test-maven-3/compare/v2.0.0...v2.1.0) (2023-10-13)
 
 
