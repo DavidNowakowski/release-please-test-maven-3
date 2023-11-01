@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.4.0](https://github.com/DavidNowakowski/release-please-test-maven-3/compare/v2.3.0...v2.4.0) (2023-11-01)
+
+
+### Features
+
+* Updated Readme ([#17](https://github.com/DavidNowakowski/release-please-test-maven-3/issues/17)) ([b9b05c4](https://github.com/DavidNowakowski/release-please-test-maven-3/commit/b9b05c4bc758e691db22815c726c85f1938e92cd))
+
 ## [2.3.0](https://github.com/DavidNowakowski/release-please-test-maven-3/compare/v2.2.0...v2.3.0) (2023-10-31)
 
 
